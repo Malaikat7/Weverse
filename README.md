@@ -185,7 +185,7 @@ HTML/Code: Nette semantische code en ook al goed ingesprongen. Mooi dat je heade
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Ideeën voor surface plane: Uitklapbare nav
+  - Ideeën voor surface plane:
 Geluid wanneer je op knop drukt
 Custom properties
 Preverse reduced motion
@@ -233,7 +233,7 @@ Wanneer scrollen wordt image hoger
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. chatgpt.com 
+  1. chatgpt.com (in het algemeen gebruik om te vragen hoe ik iets kon fixen wanneer het niet werkte. Staat specifiek verwezen in mijn code.)
   2. w3schools.com (Voor extra surface plane code zoals darkmode)
   3. ...
 
