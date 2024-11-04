@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Weverse Home 
-  <img src="weversehome.jpg" width="375px" alt="Homepagina Weverse">
+  <img src="images/weversehome.jpg" width="375px" alt="Homepagina Weverse">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Media 
