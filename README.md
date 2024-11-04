@@ -72,10 +72,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### Home Page: 
-  <img src="homebreakdown.jpg" width="375px" alt="breakdown van de home pagina">
+  <img src="images/homebreakdown.png" width="375px" alt="breakdown van de home pagina">
 
   ### Media Page: 
-  <img src="mediabreakdown.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="images/mediabreakdown.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
