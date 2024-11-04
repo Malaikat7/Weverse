@@ -157,6 +157,9 @@ HTML/Code: Nette semantische code en ook al goed ingesprongen. Mooi dat je heade
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  - Screenreader las niet alles voor en skipte belangrijke elementen. (Heb aria-labels gegeven)
+  - Lay-out van de merch section klopte nog niet helemaal op de website. (Gefixt met css)
+
 </details>
 
 
@@ -205,19 +208,20 @@ Wanneer scrollen wordt image hoger
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="images/myweversehome.png" width="375px" alt="uitkomst home pagina">
+  <img src="images/mediapagefinal.png" width="375px" alt="uitkomst media pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb veel geleerd over het gebruik van verschillende html elementen waar ik eerst nog niet veel over wist. Ik heb interessante kleine onderdelen geleerd zoals waar je bijvoorbeeld aria-label voor kan gebruiken, of dat ik meerdere navigaties onder een header kan zetten. Ook heb ik geleerd om efficiënter te coderen door zoveel mogelijk "nth-of-type" te gebruiken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="images/finalheadermedia.png" width="375px" alt="top">
+  <img src="images/typecode.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik vond het lastig om het scrollen eerst voor elkaar te krijgen. Uiteindelijk is het wel gelukt door steeds iets anders te proberen. Ik vond het ook lastig om nieuwe dingen te proberen in javascript, zoals dus het scrollen en het volledig mooi krijgen van de darkmode. Het was lastig om de dingen te stijlen zoals ik het wilde hebben in darkmode. Uiteindelijk heb ik ook de button voor switch dark/light mode een andere look gegeven dan dat ik eerst wou hebben. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="images/darkmodecode.png" width="375px" alt="bummer">
 </details>
 
 
@@ -235,6 +239,6 @@ Wanneer scrollen wordt image hoger
 
   1. chatgpt.com (in het algemeen gebruik om te vragen hoe ik iets kon fixen wanneer het niet werkte. Staat specifiek verwezen in mijn code.)
   2. w3schools.com (Voor extra surface plane code zoals darkmode)
-  3. ...
+  3. Hulp van student-assistenten voor minor fixations zoals header layout fixen. 
 
 </details>
