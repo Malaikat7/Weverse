@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Pretendard';
-    src: url(/fonts/Pretendard-Regular.otf) format('truetype');
+    src: url(/fonts/Pretendard-Regular.otf) format('opentype');
 }
 
 body {
@@ -12,7 +12,7 @@ h1 {
     display: none;
 }
 
-/*Main header*/
+/*MAIN HEADER*/
 header {
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ nav ul li:first-of-type img[alt="Weverse"] {
     margin-right: 1.9em;
   }
 
-/*Carousel banners*/
+/*HOME BANNER*/ /*hulp van chatGPT*/
 .carousel-container {
     position: relative;
     width: 100vw;
@@ -99,24 +99,21 @@ button.prev svg, button.next svg {
     height: 1.5em;         
 }
 
-/*Tekst op banners*/
-.titleonimage, .textonimage {
+/*TEKST OP BANNER*/ /*Hulp van student assistent*/
+.carousel-container li > p:first-of-type {
     position: absolute;
-    text-align: left;
-}
-
-.titleonimage {
     top: 1.4em;
     left: 1.2em;
-    font-size:larger;
+    font-size: larger;
     font-weight: bold;
 }
 
-.textonimage {
+.carousel-container li > p:nth-of-type(2) {
+    position: absolute;
     top: 9.5em;
     left: 2.7em;
     right: 80px;
-    font-size:xx-small;
+    font-size: xx-small;
     font-weight: 400;
 }
 
@@ -134,7 +131,7 @@ h4 {
     margin-bottom: 0.6em;
 }
 
-/* My communites, Looking for new artists?*/
+/* MY COMMUNITIES & LOOKING FOR NEW ARTISTS?*/
 .maingrid {
     display: flex;
     flex-direction: column;
@@ -146,12 +143,7 @@ h4 {
     padding-bottom: 3em;
 }
 
-.gridelement a {
-    text-decoration: none;
-    color: black;
-}
-
-.gridelement {
+.maingrid > article {
     background-color: #fff;
     border-radius: 0.6em;
     box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
@@ -160,12 +152,17 @@ h4 {
     overflow: hidden;
 }
 
-.gridelement > img {
+.maingrid a {
+    text-decoration: none;
+    color: black;
+}
+
+.maingrid img:first-child {
     width: 100%;
     border-radius: 0.6em 0.6em 0 0;
 }
 
-.logo {
+.maingrid img.logo { /*logo add hulp van chatGPT*/
     width: 2.5em;
     height: 2.5em;
     border-radius: 3.1em;
@@ -179,14 +176,13 @@ h4 {
     align-items: center;
 }
 
-/* Banner voor promotie*/
+/*PROMO BANNER*/
 .promotion {
     width: 100%;
     margin-top: 4em;
 }
 
-/*Merch*/
-
+/*MERCHANDISE*/
 .merch {
     position: relative;
     padding: 20px;
@@ -202,23 +198,21 @@ h4 {
     margin-bottom: 30px;
 }
 
-.button {
+.merch button {
     padding: 0.6em 1.25em;
     border-radius: 3em;
     background-color: #f5f5f5;
     border: none;
 }
 
-.buttonactive { 
-    padding: 0.6em 1.25em;
-    border-radius: 3em;
+.merch .buttonactive { 
     background-color: #000000;
     color: white;
-    border: none;
 }
 
 .merch .next{ 
     right: 0;
+    background-color: transparent;
 }
 
 .merchitems {
@@ -228,7 +222,7 @@ h4 {
     flex-wrap: wrap; 
 }
 
-.item {
+.merchitems > figure {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -240,30 +234,30 @@ h4 {
     padding: 0;
 }
 
-.item img {
+.merchitems img {
     width: 100%; 
     height: 5em;
     border-radius: 0.9em;
     object-fit: cover;
 }
 
-.item figcaption {
+.merchitems figcaption {
     position: absolute;
     margin-top: 5em;
     text-align: left;
 }
 
-.item-name {
+figcaption p:nth-of-type(1) {
     font-size: 1rem;
     margin-bottom: -0.5em;
 }
 
-.item-price {
+figcaption p:nth-of-type(2) {
     font-size: 1.1rem;
     font-weight:bolder;
 }
 
-/* Now on Weverse DM!*/
+/* NOW ON WEVERSE DM!*/ /*Hulp van chatGPT*/
 .weverse-dm {
     display: flex;
     justify-content: center;
@@ -325,7 +319,7 @@ footer a {
     margin-right: 1em;
 }
 
-footer section {
+footer nav {
     margin-bottom: 1.25em;
 }
 
@@ -334,9 +328,10 @@ footer article p {
 }
 
 
-/*MEDIA PAGE*/
+/*SEVENTEEN MEDIA PAGE*/
 
-/*MAIN*/
+
+/*SEVENTEEN MEDIA PAGE HEADERS*/
 .mediamain {
     background-color: #222; 
 }
@@ -348,7 +343,7 @@ footer article p {
 
 .media-nav{
     width: 100%;
-    background: linear-gradient(to right, #db3a7a, #ff7e55, #ffc95e);
+    background: linear-gradient(to right, #db3a7a, #ff7e55, #ffc95e); /*styling met chatGPT*/
     padding: 0.6em 0;
 }
 
@@ -396,7 +391,7 @@ footer article p {
     width: 100%;
 }
 
-.slides {
+.slides { /*scrolling hulp van chatGPT*/
     display: flex;
     gap: 1.25em;
     list-style: none;
@@ -440,7 +435,7 @@ footer article p {
 }
 
 
-/* TEKST OP SLIDES */
+/* TEKST OP SEVENTEEN SLIDES */
 .slides li div {
     position: absolute;
     bottom: 1.25em;
@@ -537,7 +532,7 @@ footer article p {
     padding-bottom: 0.3em;
 }
 
-.media-content {
+.media-content { /*scrolling met hulp van chatGPT*/
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -566,7 +561,10 @@ footer article p {
     text-overflow: ellipsis; /* lange teksten breken niet af*/
 }
 
+
 /*DARK MODE*/
+
+/*SWITCH BUTTON*/
 main > button:first-of-type {
     padding: 0.5em;
     width: 100%;
@@ -576,14 +574,13 @@ main > button:first-of-type {
     font-size:small
 }
 
-/* Change in dark mode */
 main.dark-mode > button:first-of-type {
     width: 100%;
     color: #ffffff;
     background-color: #1e1e1e;
 }
 
-/*main content dark */
+/*CONTENT ACHTERGROND VLAK*/ /*Hulp van chatGPT*/
 main.dark-mode .maingrid,
 main.dark-mode .weverse-dm,
 main.dark-mode .carousel-container, 
@@ -596,8 +593,8 @@ main.dark-mode .media-section {
     color: #e0e0e0; 
 }
 
-main.dark-mode .gridelement,
-main.dark-mode .merch .item,
+/*CONTENT MET GRIJZE VLAK*/
+main.dark-mode .maingrid article,
 main.dark-mode .weverse-dm article {
     background-color: #3d3d3d; 
     color: #ffffff;

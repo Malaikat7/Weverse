@@ -10,13 +10,9 @@
     <header>
         <h1>Weverse</h1>
         <div class="nav-container">
-            <nav>
+            <nav aria-label="Primary Navigation">
                 <ul>
-                    <li>
-                        <a href="index.html">
-                        <img src="images/weverseicon.png" alt="Weverse">
-                        </a>
-                    </li>
+                    <li><a href="index.html"><img src="images/weverseicon.png" alt="Weverse"></a></li>
                     <li><a href="#" onclick="return false;"><img src="images/searchicon.png" alt="Search"></a></li>
                     <li><a href="#" onclick="return false;"><img src="images/notificon.png" alt="Notifications"></a></li>
                     <li><a href="#" onclick="return false;"><img src="images/profileicon.png" alt="Profile"></a></li>
@@ -25,16 +21,16 @@
                     <li><a href="#" onclick="return false;"><img src="images/shopicon.png" alt="Weverseshop"></a></li>
                 </ul>            
             </nav>
-            <nav class="media-nav">
+            <nav class="media-nav" aria-label="Media Navigation">
                 <ul>
                     <li><a href="#" onclick="return false;">Feed</a></li>
                     <li><a href="#" onclick="return false;">Artist</a></li>
-                    <li><a href="#" onclick="return false;">Media</a></li>
+                    <li><a href="#" onclick="return false;"><strong><u>Media</u></strong></a></li>
                     <li><a href="#" onclick="return false;">LIVE</a></li>
                     <li><a href="#" onclick="return false;">Shop</a></li>
                 </ul>
             </nav>
-            <nav class="membership-nav">
+            <nav class="membership-nav" aria-label="Content Navigation">
                 <ul>
                     <li><a href="#" onclick="return false;">Continue Watching</a></li>
                     <li><a href="#" onclick="return false;">Latest Media</a></li>
@@ -47,15 +43,10 @@
     </header>
     <main class="mediamain">
         <section class="slider">
-            <button class="prev">
-                <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 84 80" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m413 563c-22-27-70-73-106-103s-66-60-66-67c-1-15 206-218 222-218 33 0 9 39-76 123l-94 92 94 92c86 85 105 116 77 125-6 2-29-18-51-44z" transform="matrix(.1 0 0 -.1 0 80)"/>
-                  </svg>     
-            </button>
+            <button class="prev" aria-label="Previous Slide"><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 84 80" xmlns="http://www.w3.org/2000/svg"><path d="m413 563c-22-27-70-73-106-103s-66-60-66-67c-1-15 206-218 222-218 33 0 9 39-76 123l-94 92 94 92c86 85 105 116 77 125-6 2-29-18-51-44z" transform="matrix(.1 0 0 -.1 0 80)"/></svg></button>
             <ul class="slides">
                 <li>
-                    <a href="#" onclick="return false;">
-                        <img src="images/fullpackagesvt.png" alt="4th Fan Meeting">
+                    <a href="#" onclick="return false;"><img src="images/fullpackagesvt.png" alt="4th Fan Meeting">
                         <div>
                             <p>FANMEETING</p>
                             <h2>4th FAN MEETING <br>FULL PACKAGE</h2>
@@ -64,8 +55,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" onclick="return false;">
-                        <img src="images/seouldigitalcode.png" alt="SVT FOLLOW Seoul">
+                    <a href="#" onclick="return false;"><img src="images/seouldigitalcode.png" alt="SVT FOLLOW Seoul">
                         <div>
                             <p>EXCLUSIVE</p>
                             <h2>[FOLLOW] TO SEOUL DIGITAL CODE</h2>
@@ -74,8 +64,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" onclick="return false;">
-                        <img src="images/nanatour.png" alt="Nana Tour with SVT">
+                    <a href="#" onclick="return false;"><img src="images/nanatour.png" alt="Nana Tour with SVT">
                         <div>
                             <p>RECOMMEND</p>
                             <h2>Go Together NANA TOUR with SVT</h2>
@@ -84,13 +73,9 @@
                     </a>
                 </li>
             </ul>
-            <button class="next">
-                <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 84 80" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m343 614c-5-13 17-40 91-110l97-93-95-92c-94-90-108-111-85-125 10-6 229 201 229 217 0 8-208 213-221 217-5 2-12-4-16-14z" transform="matrix(.1 0 0 -.1 0 80)"/>
-                  </svg>
-            </button>
+            <button class="next" aria-label="Next Slide"><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 84 80" xmlns="http://www.w3.org/2000/svg"><path d="m343 614c-5-13 17-40 91-110l97-93-95-92c-94-90-108-111-85-125 10-6 229 201 229 217 0 8-208 213-221 217-5 2-12-4-16-14z" transform="matrix(.1 0 0 -.1 0 80)"/></svg></button>
         </section>
-        <nav class="svt-nav">
+        <nav class="svt-nav" aria-label="Seventeen content categories">
             <ul>
                 <li><a href="#" onclick="ClickMediaButton(event)">INSIDE SEVENTEEN</a></li>
                 <li><a href="#" onclick="ClickMediaButton(event)">GOING SEVENTEEN</a></li>
@@ -111,9 +96,7 @@
             <h3>Continue Watching</h3>
             <div class="media-content">
             <article>
-                <a href="https://youtu.be/81Ybt_mSWb4?si=GtKmuI3RhWEvQ2u4" target="_blank">
-                <img src="images/continuewatching.png" alt="SVT FOLLOW DK Focus">
-                </a>
+                <a href="https://youtu.be/81Ybt_mSWb4?si=GtKmuI3RhWEvQ2u4" target="_blank"><img src="images/continuewatching.png" alt="SVT FOLLOW DK Focus"></a>
                 <h4>SEVENTEEN TOUR [FOLLOW] TO SEOUL (DK focus)</h4>
             </article>
             </div>

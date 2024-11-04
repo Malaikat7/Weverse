@@ -1,5 +1,5 @@
 function DarkMode() { 
-    // Toggle the dark mode class on the main section only
+    //Dark mode main section only, hulp van w3schools en chatGPT
     document.querySelector("main").classList.toggle("dark-mode");
     document.querySelector("footer").classList.toggle("dark-mode");
 }
