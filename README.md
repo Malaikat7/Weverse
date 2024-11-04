@@ -208,7 +208,7 @@ Wanneer scrollen wordt image hoger
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="images/myweversehome.png" width="375px" alt="uitkomst home pagina">
+  <img src="images/myweversehomefinal.png" width="375px" alt="uitkomst home pagina">
   <img src="images/mediapagefinal.png" width="375px" alt="uitkomst media pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
