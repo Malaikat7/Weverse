@@ -1,0 +1,625 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url(fonts/Pretendard-Regular.otf) format('truetype');
+}
+
+body {
+    font-family: 'Pretendard';
+    margin: 0;
+}
+
+h1 {
+    display: none;
+}
+
+/*Main header*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 10em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0.5em;
+}
+
+header nav ul li img {
+    width: 2.5em;
+    height: 2.5em;
+}
+ 
+nav ul li:first-of-type img[alt="Weverse"] {
+    width: 6em;
+    margin-right: 1.9em;
+  }
+
+/*Carousel banners*/
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container > ul{
+    display: flex;
+    list-style-type: none;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    position: relative;
+    gap: 2.5em;
+    padding: 2.3em;
+    margin: 0;
+    width: 100%;
+    overflow-x: scroll; 
+}
+
+.banneritem {
+    min-width: 80vw;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.banneritem img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+button.prev, button.next {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; 
+}
+
+button.prev {
+    left: -0.5em;
+}
+
+button.next {
+    right: -0.5em; 
+}
+button.prev svg, button.next svg {
+    fill: #888;           
+    width: 1.5em;          
+    height: 1.5em;         
+}
+
+/*Tekst op banners*/
+.titleonimage, .textonimage {
+    position: absolute;
+    text-align: left;
+}
+
+.titleonimage {
+    top: 1.4em;
+    left: 1.2em;
+    font-size:larger;
+    font-weight: bold;
+}
+
+.textonimage {
+    top: 9.5em;
+    left: 2.7em;
+    right: 80px;
+    font-size:xx-small;
+    font-weight: 400;
+}
+
+img {
+    width: 13em;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    font-size: large;
+    margin: 0.3em;
+    margin-bottom: 0.6em;
+}
+
+/* My communites, Looking for new artists?*/
+.maingrid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; 
+    gap: 1.25em; 
+    background-color: rgb(249, 249, 249);
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.gridelement a {
+    text-decoration: none;
+    color: black;
+}
+
+.gridelement {
+    background-color: #fff;
+    border-radius: 0.6em;
+    box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 12.5em;
+    overflow: hidden;
+}
+
+.gridelement > img {
+    width: 100%;
+    border-radius: 0.6em 0.6em 0 0;
+}
+
+.logo {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 3.1em;
+    border: 0.2em solid white;
+    margin-top: -1.5em;
+}
+
+.textlogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Banner voor promotie*/
+.promotion {
+    width: 100%;
+    margin-top: 4em;
+}
+
+/*Merch*/
+
+.merch {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 9em;
+}
+
+.merchbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 0.6em 1.25em;
+    border-radius: 3em;
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.buttonactive { 
+    padding: 0.6em 1.25em;
+    border-radius: 3em;
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+
+.merch .next{ 
+    right: 0;
+}
+
+.merchitems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.9em;
+    width: 24%; 
+    margin-bottom: 1.25em; 
+    padding: 0;
+}
+
+.item img {
+    width: 100%; 
+    height: 5em;
+    border-radius: 0.9em;
+    object-fit: cover;
+}
+
+.item figcaption {
+    position: absolute;
+    margin-top: 5em;
+    text-align: left;
+}
+
+.item-name {
+    font-size: 1rem;
+    margin-bottom: -0.5em;
+}
+
+.item-price {
+    font-size: 1.1rem;
+    font-weight:bolder;
+}
+
+/* Now on Weverse DM!*/
+.weverse-dm {
+    display: flex;
+    justify-content: center;
+    gap: 1.25em;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1em;
+    padding-bottom: 5em;
+    margin: 0;
+    background-color: rgb(249, 249, 249);
+}
+
+.weverse-dm article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9em;
+    height: 4em;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 2em;
+    box-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+}
+
+.dmcontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.weverse-dm img {
+    border-radius: 2em;
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.5em;
+}
+
+.weverse-dm h4 {
+    font-weight: bold;
+    font-size: smaller;
+    margin: 0;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #f8f8f8;
+    padding: 1.25em;
+    font-size: 0.8em;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #555;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+footer section {
+    margin-bottom: 1.25em;
+}
+
+footer article p {
+    margin: 0.3em 0;
+}
+
+
+/*MEDIA PAGE*/
+
+/*MAIN*/
+.mediamain {
+    background-color: #222; 
+}
+
+.nav-container {
+    margin: 0;
+    padding: 0;
+}
+
+.media-nav{
+    width: 100%;
+    background: linear-gradient(to right, #db3a7a, #ff7e55, #ffc95e);
+    padding: 0.6em 0;
+}
+
+.media-nav a {
+    text-decoration: none;
+}
+
+.membership-nav {
+    align-items: center;
+    width: 100%;
+    background-color: #1d1d1d; 
+    padding: 0.9em 0;
+}
+
+.membership-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.membership-nav ul li {
+    font-size:x-small;
+    text-align: center;
+}
+
+.media-nav ul, .membership-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.media-nav li, .membership-nav li {
+    margin: 0 1em; 
+}
+
+/*SEVENTEEN SLIDER*/
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    padding-top: 3em;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    gap: 1.25em;
+    list-style: none;
+    padding: 0;
+    overflow: hidden; 
+    scroll-behavior: smooth; 
+    max-width: 80%; 
+}
+
+.slides li {
+    position: relative;
+    width: 18em;
+    flex: none;
+    border-radius: 0.6em;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.6em;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 50%;
+    color: white;
+}
+
+.prev {
+    left: 1em;
+}
+
+.next {
+    right: 1em;
+}
+
+
+/* TEKST OP SLIDES */
+.slides li div {
+    position: absolute;
+    bottom: 1.25em;
+    left: 1.25em;
+    color: white;
+    text-shadow: 0 0 0.3em rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.slides li:nth-of-type(1) div h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: -0.5em;
+}
+
+.slides li:nth-of-type(2) div h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: -0.5em;
+}
+
+.slides li:nth-of-type(3) div h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: -0.5em;
+}
+
+.slides li div p:first-of-type {
+    padding: 0.2em;
+    margin-left: 12em;
+    margin-bottom: -2em;
+    border-radius: 0.3em;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.slides li:nth-of-type(1) div p:first-of-type {
+    background-color: #f588ff; 
+    width: 7em;
+}
+
+.slides li:nth-of-type(2) div p:first-of-type {
+    background-color: #ff9900;
+    width: 7em;
+}
+
+.slides li:nth-of-type(3) div p:first-of-type {
+    background-color: #3d5bc8;
+    width: 8em;
+}
+
+
+/*LINKS UNDER SLIDER*/
+
+.svt-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.svt-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 1.2em;
+    padding: 0;
+    gap: 0.5em;
+}
+
+.svt-nav a {
+    text-decoration: none;
+    color: white; 
+    background-color: #3a3a3a; 
+    padding: 0.6em 1.25em; 
+    border-radius: 3em; 
+    font-size: small;
+    display: inline-block;
+}
+
+
+/*MEDIA CONTENT*/
+
+.media-section {
+    margin-bottom: 1.25em;
+    padding: 0.6em;
+    border-radius: 0.6em;
+    overflow: hidden;
+}
+
+.media-section h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.9em;
+    padding-bottom: 0.3em;
+}
+
+.media-content {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.9em; 
+    padding-bottom: 0.6em;
+}
+
+.media-section article {
+    flex: 0 0 auto;
+    width: 12.5em;
+    margin: 0.3em 0;
+}
+
+.media-section img {
+    width: 100%; 
+    height: auto;
+    border-radius: 0.6em;
+}
+
+.media-section h4 {
+    color: white;
+    font-size: 0.9rem; 
+    margin-top: 0.3em;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; /* lange teksten breken niet af*/
+}
+
+/*DARK MODE*/
+main > button:first-of-type {
+    padding: 0.5em;
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: #000000;
+    font-size:small
+}
+
+/* Change in dark mode */
+main.dark-mode > button:first-of-type {
+    width: 100%;
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+
+/*main content dark */
+main.dark-mode .maingrid,
+main.dark-mode .weverse-dm,
+main.dark-mode .carousel-container, 
+main.dark-mode .banneritem,
+main.dark-mode .promotion,
+main.dark-mode .merch,
+main.dark-mode .slider,
+main.dark-mode .media-section {
+    background-color: #1e1e1e; 
+    color: #e0e0e0; 
+}
+
+main.dark-mode .gridelement,
+main.dark-mode .merch .item,
+main.dark-mode .weverse-dm article {
+    background-color: #3d3d3d; 
+    color: #ffffff;
+}
+
+main.dark-mode .button {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+main.dark-mode h1, 
+main.dark-mode h3, 
+main.dark-mode h4, 
+main.dark-mode p {
+    color: #ffffff; 
+}
+
+footer.dark-mode {
+    background-color: #1e1e1e; 
+    color: #e0e0e0;
+}
+
+footer.dark-mode a {
+    color: #ffffff; 
+}
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weverse</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Weverse</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                    <img src="images/weverseicon.png" alt="Weverse">
+                    </a>
+                </li>
+                <li><a href="#" onclick="return false;"><img src="images/searchicon.png" alt="Search"></a></li>
+                <li><a href="#" onclick="return false;"><img src="images/notificon.png" alt="Notifications"></a></li>
+                <li><a href="#" onclick="return false;"><img src="images/profileicon.png" alt="Profile"></a></li>
+                <li><a href="#" onclick="return false;"><img src="images/settingsicon.png" alt="Settings"></a></li>
+                <li><a href="#" onclick="return false;"><img src="images/jellyicon.png" alt="Jellyshop"></a></li>
+                <li><a href="#" onclick="return false;"><img src="images/shopicon.png" alt="Weverseshop"></a></li>
+            </ul>            
+        </nav>
+    </header>
+    <main>
+        <button onclick="DarkMode()">Switch Theme</button>
+        <section class="carousel-container">
+        <button class="prev">
+            <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 84 80" xmlns="http://www.w3.org/2000/svg">
+                <path d="m413 563c-22-27-70-73-106-103s-66-60-66-67c-1-15 206-218 222-218 33 0 9 39-76 123l-94 92 94 92c86 85 105 116 77 125-6 2-29-18-51-44z" transform="matrix(.1 0 0 -.1 0 80)"/>
+              </svg>     
+        </button>
+        <ul>
+            <li class="banneritem">
+                <a href="#">
+                    <img src="images/SMArtistbg.png" alt="SM Artist Membership"/>
+                </a>
+                <p class="titleonimage">SM ARTIST <br>MEMBERSHIP</p>
+                <p class="textonimage">RENEWAL! <br>Available right now</p>
+            </li>
+            <li class="banneritem">
+                <a href="#">
+                    <img src="images/GLLITbg.png" alt="GLLIT Membership"/>
+                </a>
+                <p class="titleonimage">Join GLLIT!</p>
+                <p class="textonimage">GLLIT MEMBERSHIP <br>NOW OPEN</p>
+            </li>
+            <li class="banneritem">
+                <a href="#">
+                    <img src="images/QWERbg.png" alt="QWER Mini Album"/>
+                </a>
+                <p class="titleonimage">The 2nd <br>Mini Album</p>
+                <p class="textonimage">[Algorithm's Blossom] <br>Pre-order now on Weverse Shop!</p>
+            </li>
+        </ul>        
+        <button class="next">
+            <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 84 80" xmlns="http://www.w3.org/2000/svg">
+                <path d="m343 614c-5-13 17-40 91-110l97-93-95-92c-94-90-108-111-85-125 10-6 229 201 229 217 0 8-208 213-221 217-5 2-12-4-16-14z" transform="matrix(.1 0 0 -.1 0 80)"/>
+              </svg>
+        </button>
+        </section>
+        <section class="maingrid">
+            <h3>My communities</h3>
+            <article class="gridelement">
+                <a href="media.html">
+                    <img src="images/Seventeen.jpeg" alt="Seventeen">
+                <div class="textlogo">
+                    <img src="images/SVTLogo.jpeg" alt="Seventeen Logo" class="logo">
+                    <h4>SEVENTEEN</h4>
+                </div>
+                </a>
+            </article>
+            <article class="gridelement">
+                <img src="images/BTS.png" alt="BTS">
+            <div class="textlogo">
+                <img src="images/BTSlogo.jpeg" alt="BTS Logo" class="logo">
+                <h4>BTS</h4>
+            </div>
+            </article>
+            <article class="gridelement">
+                <img src="images/Plave.png" alt="Plave">
+            <div class="textlogo">
+                <img src="images/plavelogo.png" alt="Plave Icon" class="logo">
+                <h4>PLAVE</h4>
+            </div>
+            </article>
+            <img class="promotion" src="images/promotionbanner.png" alt="BoyNextDoor Promotion Banner">
+        </section>
+        <section class="merch">
+            <h3>Merch</h3>
+            <article class="merchbuttons">
+                <button class="buttonactive">All</button>
+                <button class="button">SEVENTEEN</button>
+                <button class="button">PLAVE</button>
+                <button class="button">BTS</button>
+            </article>
+            <article class="merchitems">
+                <figure class="item">
+                    <img src="images/armyfanclub.png" alt="Army Membership">
+                    <figcaption>
+                        <p class="item-name">ARMY MEMBERSHIP</p>
+                        <p class="item-price">$20.50</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <img src="images/asterumalbum.png" alt="Asterum Album">
+                    <figcaption>
+                        <p class="item-name">1st Single Album [ASTERUM]</p>
+                        <p class="item-price">$10.90</p>
+                    </figcaption>
+                </figure>
+            </article>
+            <button class="next">
+                <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 84 80" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m343 614c-5-13 17-40 91-110l97-93-95-92c-94-90-108-111-85-125 10-6 229 201 229 217 0 8-208 213-221 217-5 2-12-4-16-14z" transform="matrix(.1 0 0 -.1 0 80)"/>
+                  </svg>
+            </button>
+        </section>
+        <section class="weverse-dm">
+            <h3>Now on Weverse DM!</h3>
+            <article>
+                <div class="dmcontent">
+                    <img src="images/katseyelogo.jpeg" alt="Katseye">
+                    <h4>KATSEYE</h4>
+                </div>
+            </article>
+            <article>
+                <div class="dmcontent">
+                    <img src="images/Illitlogo.png" alt="ILLIT">
+                    <h4>ILLIT</h4>
+                </div>
+            </article>
+            <article>
+                <div class="dmcontent">
+                    <img src="images/Pentagonlogo.jpg" alt="Pentagon">
+                    <h4>PENTAGON</h4>
+                </div>
+            </article>
+            <article>
+                <img src="images/refreshbutton.png" alt="Refresh">
+            </article>
+        </section>
+        <section class="maingrid">
+            <h3>Looking for new artists?</h3>
+            <article class="gridelement">
+                <img src="images/KimJunSu.jpeg" alt="Kim Jun Su">
+            <div class="textlogo">
+                <img src="images/kimjunsulogo.png" alt="Kim Jun Su logo" class="logo">
+                <h4>Kim Jun Su</h4>
+            </div>
+            </article>
+            <article class="gridelement">
+                <img src="images/Tempest.png" alt="TEMPEST">
+            <div class="textlogo">
+                <img src="images/tempestlogo.jpg" alt="Tempest Logo" class="logo">
+                <h4>TEMPEST</h4>
+            </div>
+            </article>
+            <article class="gridelement">
+                <img src="images/nctdream.jpeg" alt="NCT DREAM">
+            <div class="textlogo">
+                <img src="images/nctdreamlogo.jpg" alt="NCT DREAM logo" class="logo">
+                <h4>NCT DREAM</h4>
+            </div>
+            </article>
+            <article class="gridelement">
+                <img src="images/riize.jpeg" alt="RIIZE">
+            <div class="textlogo">
+                <img src="images/riizelogo.jpg" alt="RIIZE Logo" class="logo">
+                <h4>RIIZE</h4>
+            </div>
+            </article>
+            <article class="gridelement">
+                <img src="images/thekingdom.jpeg" alt="The Kingdom">
+            <div class="textlogo">
+                <img src="images/thekingdomlogo.jpeg" alt="The Kingdom Logo" class="logo">
+                <h4>The Kingdom</h4>
+            </div>
+            </article>
+            <article class="gridelement">
+                <img src="images/p1harmony.jpeg" alt="P1Harmony">
+            <div class="textlogo">
+                <img src="images/p1harmonylogo.jpeg" alt="P1Harmony Logo" class="logo">
+                <h4>P1Harmony</h4>
+            </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <a href="#" onclick="return false;">Terms of use</a>
+            <a href="#" onclick="return false;">Service operation policy</a>
+            <a href="#" onclick="return false;">Premium service terms of use</a>
+            <a href="#" onclick="return false;"><strong>Privacy policy</strong></a>
+            <a href="#" onclick="return false;">Cookie policy</a>
+            <a href="#" onclick="return false;">Cookie Settings</a>
+            <a href="#" onclick="return false;">Join Weverse as an artist</a>
+            <a href="#" onclick="return false;">Help</a>
+        </section>
+        <article>
+            <p><strong>Company Name:</strong> WEVERSE COMPANY Inc.</p>
+            <p><strong>CEO:</strong> Joon Won Choi</p>
+            <p><strong>Call Center:</strong> 1544-0790 (only available in South Korea)</p>
+            <p><strong>FAX:</strong> +82 2-2144-9399</p>
+            <p><strong>Address:</strong>
+                <a href="https://www.google.com/maps/search/?api=1&query=C,+6F,+PangyoTech-one+Tower,+131,+Bundangnaegok-ro,+Bundang-gu,+Seongnam-si,+Gyeonggi-do,+Republic+of+Korea" target="_blank">
+                    📍C, 6F, PangyoTech-one Tower, 131, Bundangnaegok-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea
+                </a> <!-- hulp van chatGPT -->
+            </p>
+            <p><strong>Business Registration Number:</strong> 716-87-01158 <a href="#" onclick="return false;">Business Registration</a></p>
+            <p><strong>Mail Order Business Registration Number:</strong> 2022-Seongnam Bundang A-0557</p>
+            <p><strong>Hosted by:</strong> Amazon Web Services, Inc., Naver Cloud</p>
+            <p>© WEVERSE COMPANY Inc. Ver 2.20.6</p>
+        </article>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
